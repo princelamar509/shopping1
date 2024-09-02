@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ProductListingPage from './pages/ProductListingPage';
@@ -109,6 +109,8 @@ const App = () => {
             path="/contact"
             element={<ContactPage />}
           />
+
+<Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </Router>
