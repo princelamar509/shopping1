@@ -37,7 +37,7 @@ const CartPage = ({ cartItems, incrementQuantity, decrementQuantity, removeFromC
           </ul>
           <div className="cart-summary">
             <p>Total Amount: ${calculateTotalAmount().toFixed(2)}</p>
-            <button onClick={clearCart}>Clear Cart</button>
+            <button className="clear-btn" onClick={clearCart}>Clear Cart</button>
             <Link to="/checkout" className="checkout-link">Go to Checkout</Link>
           </div>
         </>
