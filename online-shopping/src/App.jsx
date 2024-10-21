@@ -7,8 +7,10 @@ import ProductDetailPage from './pages/ProductDetailPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import ContactPage from './pages/ContactPage';
-
 import './styles/App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -111,9 +113,31 @@ const App = () => {
           />
 
 <Route path="*" element={<Navigate to="/" replace />} />
+  
         </Routes>
+  
       </div>
+      <footer>
+        <p>© 2024 Mr madeus. All rights reserved.</p>
+        <div className="footer-social-icons">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </a>
+        </div>
+        <p>Designed by <a href="https://www.linkedin.com/in/renemadeus/" target="_blank"><b>Mr Madeus</b></a></p>
+      </footer>
     </Router>
+
+
   );
 };
 

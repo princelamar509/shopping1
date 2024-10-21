@@ -25,7 +25,6 @@ const ProductDetailPage = ({ addToCart }) => {
   const handleAddToWishlist = () => {
     addToCart(product);
     window.location.href = '/wishlist';
-    
   };
 
   return (
