@@ -10,6 +10,7 @@ import ContactPage from './pages/ContactPage';
 import './styles/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import Chatbot from './components/Chatbot';
 
 
 const App = () => {
@@ -134,7 +135,10 @@ const App = () => {
           </a>
         </div>
         <p>Designed by <a href="https://www.linkedin.com/in/renemadeus/" target="_blank"><b>Mr Madeus</b></a></p>
+        <Chatbot />
       </footer>
+
+    
     </Router>
 
 
