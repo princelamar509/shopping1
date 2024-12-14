@@ -114,6 +114,15 @@
   background-color: #e55c50;
 }
 
+
+.detailbtn{
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+
+}
+
 /* Product Listing Page */
 .product-listing-page {
   padding: 2rem;
