@@ -17,9 +17,8 @@ const App = () => {
   const [cartItems, setCartItems] = useState([]);
   const [filters, setFilters] = useState({
     color: '',
-    size: 'All',
-    gender: 'All',
-  });
+    size: 'All', 
+    gender: 'All',});
 
   const addToCart = (product) => {
     setCartItems((prevItems) => {
