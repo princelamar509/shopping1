@@ -5,7 +5,7 @@ import './Chatbot.css';
 const ModernChatbot = () => {
     const [messages, setMessages] = useState([
       {
-        text: "Hi! I'm your AI assistant. How can I help you today?",
+        text: "Hi! I'm LUCY your AI assistant. How can I help you today?",
         sender: 'bot',
         id: Date.now()
       }
